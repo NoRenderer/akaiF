@@ -13,7 +13,6 @@ def map_midi_to_keyboard(midi_port):
             keyboard.release('f')
         if msg.type == 'control_change':
             print(msg.control, msg.value)
-            """
             if msg.control >= 70:
                 if msg.value < 30:
                     keyboard.press(Key.left)
@@ -43,6 +42,7 @@ def map_midi_to_keyboard(midi_port):
                 else:
                     keyboard.release(Key.left)
                     keyboard.release(Key.right)
+            """
                     
             
             
